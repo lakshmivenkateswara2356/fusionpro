@@ -180,7 +180,7 @@ export const PROJECTS = [
     title: "🛒 Algoman",
     
     image: "/projects/Shoping.png",
-    link: "https://projectshopingapp.vercel.app/",
+    link: "https://www.algoman.in/assets/algoman/home.html",
   },
   {
     title: "Ecommerce",
@@ -192,7 +192,7 @@ export const PROJECTS = [
     title: "Projects",
    
     image: "/projects/clikkle.png",
-    link: "https://speedlineautoparts.netlify.app/",
+    link: "https://projectshopingapp.vercel.app/",
   },
 ] as const;
 
