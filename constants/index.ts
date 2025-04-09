@@ -1,4 +1,6 @@
 import { FaYoutube, FaFacebook } from "react-icons/fa";
+
+
 import {
   RxDiscordLogo,
   RxGithubLogo,
@@ -175,21 +177,21 @@ export const OTHER_SKILL = [
 
 export const PROJECTS = [
   {
-    title: "🛒 Tekisky Mart – The Future of eCommerce",
+    title: "🛒 Algoman",
     
-    image: "/projects/project-1.webp",
-    link: "https://tekiskymart.com/",
+    image: "/projects/Shoping.png",
+    link: "https://projectshopingapp.vercel.app/",
   },
   {
-    title: "Tekisky – The Future of Tech",
+    title: "Ecommerce",
 
-    image: "/projects/project-2.webp",
-    link: "https://tekisky.com/",
+    image: "/projects/Ecomer.png",
+    link: "https://project-managementool.vercel.app/walk-through",
   },
   {
-    title: "Speedline Auto Parts – The Future of Auto Parts",
+    title: "Projects",
    
-    image: "/projects/project-3.webp",
+    image: "/projects/clikkle.png",
     link: "https://speedlineautoparts.netlify.app/",
   },
 ] as const;
@@ -214,7 +216,7 @@ export const FOOTER_DATA = [
       {
         name: "Linkedin",
         icon: RxLinkedinLogo,
-        link: "https://www.linkedin.com/in/abdul-raheman-389597281/",
+        link: "https://www.linkedin.com/in/punnam-lakshmivenkateswara-5b0198299/",
       },
     ],
   },
@@ -225,7 +227,7 @@ export const FOOTER_DATA = [
       {
         name: "Contact Me",
         icon: null,
-        link: "mailto:arrahmanofficial9@gmail.com",
+        link: "mailto:lakshmivenkateswarapunnam@gmail.com",
       },
     ],
   },

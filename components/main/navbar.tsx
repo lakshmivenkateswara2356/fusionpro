@@ -24,7 +24,7 @@ export const Navbar = () => {
             className="cursor-pointer hidden md:block lg:block"
           />
           <span className=" md:block text-white font-bold ml-2">
-            Abdul Rahman | Devxora
+            Lakshmivenkateswara
           </span>
         </Link>
 
@@ -41,7 +41,7 @@ export const Navbar = () => {
         <div className="hidden md:flex space-x-4">
           {SOCIALS.map(({ link, name, icon: Icon }) => (
             <Link key={name} href={link} target="_blank" rel="noopener noreferrer">
-              <Icon className="h-6 w-6 text-white hover:text-[rgb(112,66,248)] transition" />
+              <Icon className="h-6 w-6 text-white hover:text-[rgb(66, 105, 248)] transition" />
             </Link>
           ))}
         </div>
