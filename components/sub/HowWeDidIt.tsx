@@ -1,40 +1,33 @@
 "use client";
 
-import React from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { motion, useInView, animate, useMotionValue } from "framer-motion";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 // Counter animation component
 const Counter = ({ from = 0, to, duration = 2, suffix = "" }: any) => {
-  const controls = useAnimation();
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true });
-  const count = React.useRef(from);
+
+  const count = useMotionValue(from);
+  const [display, setDisplay] = useState(from);
 
   useEffect(() => {
     if (isInView) {
-      controls.start({
-        count: to,
-        transition: { duration, ease: "easeOut" },
+      const controls = animate(count, to, {
+        duration,
+        ease: "easeOut",
+        onUpdate: (latest) => setDisplay(Math.floor(latest)),
       });
+      return () => controls.stop();
     }
-  }, [controls, isInView, to, duration]);
+  }, [count, isInView, to, duration]);
 
   return (
-    <motion.span
-      ref={ref}
-      initial={{ count: from }}
-      animate={controls}
-      onUpdate={(latest) => {
-        if (ref.current) {
-          ref.current.textContent = `${Math.floor(
-            latest.count || 0
-          )}${suffix}`;
-        }
-      }}
-      className="text-[#7042f8] font-bold text-4xl"
-    />
+    <span ref={ref} className="text-[#7042f8] font-bold text-4xl">
+      {display}
+      {suffix}
+    </span>
   );
 };
 
