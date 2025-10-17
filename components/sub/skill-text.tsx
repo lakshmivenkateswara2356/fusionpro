@@ -287,7 +287,7 @@ export const SkillText = () => {
         variants={slideInFromRight(0.5)}
         className="text-[35px] text-gray-200 font-semibold mb-10 mt-[10px] text-center max-w-4xl leading-snug"
       >
-        We’re Your Ideal B2B SaaS Demand Generation Agency!
+        We re Your Ideal B2B SaaS Demand Generation Agency!
       </motion.h1>
 
      <Image src={Screen} alt="Screenshot preview" width={2500} height={2500} />
