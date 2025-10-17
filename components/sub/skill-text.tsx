@@ -300,11 +300,12 @@ export const SkillText = () => {
       </motion.h2>
      
 <motion.h1
-        variants={slideInFromRight(0.5)}
-        className="text-[35px] text-gray-200 font-semibold mb-10 mt-[10px] text-center max-w-4xl leading-snug"
-      >
-        Vymo wanted break into Indias competitive banking and insurance market by leveraging hyper-targeted LinkedIn Ads and ABM strategies, resulting in a $21M pipeline
-      </motion.h1>
+  variants={slideInFromRight(0.5)}
+  className="text-[35px] text-gray-200 font-semibold mb-10 mt-[10px] text-center max-w-4xl leading-snug"
+>
+  Vymo wanted break into India&apos;s competitive banking and insurance market by leveraging hyper-targeted LinkedIn Ads and ABM strategies, resulting in a $21M pipeline
+</motion.h1>
+
 
       <HowWeDidIt/>
 
