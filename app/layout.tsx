@@ -30,7 +30,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <StarsCanvas />
         <Navbar />
         {children}
-        <Footer />
+        
       </body>
     </html>
   );

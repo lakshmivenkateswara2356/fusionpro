@@ -177,23 +177,35 @@ export const OTHER_SKILL = [
 
 export const PROJECTS = [
   {
-    title: "🛒 Algoman",
+    title: "Gupta das",
     
-    image: "/projects/Shoping.png",
-    link: "https://www.algoman.in/assets/algoman/home.html",
+    image: "",
+    link: "",
   },
   {
-    title: "Ecommerce",
+    title: "zaid",
 
-    image: "/projects/Ecomer.png",
-    link: "https://project-managementool.vercel.app/walk-through",
+    image: "",
+    link:  "",
   },
   {
-    title: "Projects",
+    title: "Karan Shah",
    
-    image: "/projects/clikkle.png",
-    link: "https://projectshopingapp.vercel.app/",
+    image: "",
+    link: "",
   },
+  {
+    title: "Roshan kariyappa",
+   
+    image: "",
+    link: "",
+  },
+  {
+    title: "Anitha",
+   
+    image: "",
+    link: "",
+  }
 ] as const;
 
 export const FOOTER_DATA = [
@@ -235,15 +247,23 @@ export const FOOTER_DATA = [
 
 export const NAV_LINKS = [
   {
-    title: "About me",
+    title: "Home",
     link: "#about-me",
   },
   {
-    title: "Skills",
-    link: "#skills",
+    title: "service",
+    link: "#",
   },
   {
-    title: "Projects",
+    title: "About",
+    link: "#",
+  },
+  {
+    title: "Resources",
+    link: "#",
+  },
+  {
+    title: "Success Stories",
     link: "#projects",
   },
 ] as const;

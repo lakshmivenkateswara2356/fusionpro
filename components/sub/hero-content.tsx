@@ -21,7 +21,7 @@ export const HeroContent = () => {
         >
           <SparklesIcon className="text-[#b49bff] h-4 w-4 md:h-5 md:w-5" />
           <h1 className="text-[12px] md:text-[13px] text-gray-200 font-semibold">
-            Fullstack Developer
+            Revv Growth
           </h1>
         </motion.div>
 
@@ -30,32 +30,40 @@ export const HeroContent = () => {
           variants={slideInFromLeft(0.5)}
           className="text-3xl sm:text-4xl md:text-6xl font-bold text-white max-w-[600px] leading-tight"
         >
-          Transforming{" "}
+      Leading B2B Demand Generation Agency for SaaS!{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
             Ideas
           </span>{" "}
           into Seamless User{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-            Experiences
+            Experiences 
           </span>
+
+          
         </motion.h1>
+           
+          <p className="text-transparent text-lg bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">Accelerate Growth by Connecting with the Right Prospects, through the Right Channel</p>
+
 
         {/* Description */}
         <motion.p
           variants={slideInFromLeft(0.8)}
           className="text-base sm:text-lg text-gray-400 my-3 sm:my-4 max-w-[500px] mx-auto md:mx-0"
         >
-          I&apos;m a Full Stack Software Engineer specializing in building modern web applications. Check out my projects and skills.
+          We&apos; drive high-intent leads to you with targeted SEO and Google Ads. and use LinkedIn Ads to engage with decision-makers and get your brand in front of them.
         </motion.p>
 
+        
         {/* Call-to-Action Button */}
         <motion.a
           variants={slideInFromLeft(1)}
           href="#projects"
           className="py-2 px-5 sm:px-6 bg-gradient-to-r from-purple-500 to-cyan-500 text-white text-base sm:text-lg font-medium rounded-lg shadow-lg transition-transform transform hover:scale-105 max-w-[180px] sm:max-w-[200px] mx-auto md:mx-0"
         >
-          Learn more
+          Our clients
         </motion.a>
+
+        
       </div>
 
       {/* Right Side Image */}

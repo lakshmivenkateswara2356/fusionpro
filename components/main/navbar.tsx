@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { NAV_LINKS, SOCIALS } from "@/constants";
+import Company from './company.svg';
 import { motion, AnimatePresence } from "framer-motion";
 
 export const Navbar = () => {
@@ -16,7 +17,7 @@ export const Navbar = () => {
         {/* Logo & Name */}
         <Link href="#about-me" className="flex items-center" onClick={closeMenu}>
           <Image
-            src="/logo.png"
+            src="/logo.svg"
             alt="Logo"
             width={50}
             height={50}
@@ -24,7 +25,7 @@ export const Navbar = () => {
             className="cursor-pointer hidden md:block lg:block"
           />
           <span className=" md:block text-white font-bold ml-2">
-            Lakshmivenkateswara
+           Revv Growth
           </span>
         </Link>
 
@@ -38,13 +39,15 @@ export const Navbar = () => {
         </div>
 
         {/* Social Links (Desktop) */}
-        <div className="hidden md:flex space-x-4">
-          {SOCIALS.map(({ link, name, icon: Icon }) => (
-            <Link key={name} href={link} target="_blank" rel="noopener noreferrer">
-              <Icon className="h-6 w-6 text-white hover:text-[rgb(66, 105, 248)] transition" />
-            </Link>
-          ))}
-        </div>
+       
+  <motion.a
+          
+          href=""
+          className="py-2 px-5 sm:px-6 bg-gradient-to-r from-purple-500 to-cyan-500 text-white text-base sm:text-lg font-medium rounded-lg shadow-lg transition-transform transform hover:scale-105 max-w-[180px] sm:max-w-[200px] mx-auto md:mx-0"
+        >
+         Talk to us
+        </motion.a>
+
 
         {/* Mobile Menu Button */}
         <button
